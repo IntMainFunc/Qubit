@@ -1,0 +1,14 @@
+# gitIgnore:
+#-----------
+
+# Directories:
+# ------------
+
+.vs/
+bin/
+bin-int/
+
+# Files types:
+# ------------
+
+*.user
