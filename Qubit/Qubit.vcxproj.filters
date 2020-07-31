@@ -1,39 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="qubit">
+      <UniqueIdentifier>{4AA83D10-B6BC-65C1-7F3E-0921EB1162F2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="qubit\core">
+      <UniqueIdentifier>{02172F51-EECE-709E-57D6-49FA43AD0B8F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\qubit\core\QubitCore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Qubit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Qubit.h" />
     <ClInclude Include="src\qubit\core\App.h">
-      <Filter>Header Files</Filter>
+      <Filter>qubit\core</Filter>
     </ClInclude>
     <ClInclude Include="src\qubit\core\Logger.h">
-      <Filter>Header Files</Filter>
+      <Filter>qubit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qubit\core\QubitCore.h">
+      <Filter>qubit\core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\qubit\core\App.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>qubit\core</Filter>
     </ClCompile>
     <ClCompile Include="src\qubit\core\Logger.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>qubit\core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
