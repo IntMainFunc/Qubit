@@ -61,31 +61,34 @@ namespace qbt {
 
 }
 
-#ifdef QBT_WINDOWS_PLATFORM // Windows platform x32/x64/x86
-#define QBT_LOG_INFO(...) \
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Info);\
-qbt::Logger::LogMassage(__VA_ARGS__);\
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
-
-#define QBT_LOG_WARN(...) \
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Warning);\
-qbt::Logger::LogMassage(__VA_ARGS__);\
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
-
-#define QBT_LOG_ERROR(...) \
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Error);\
-qbt::Logger::LogMassage(__VA_ARGS__);\
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
-
-#define QBT_LOG_FATAL(...) \
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Fatal);\
-qbt::Logger::LogMassage(__VA_ARGS__);\
-SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
-
-#else // Windows platform x32/x64/x86
-#define QBT_LOG_INFO(...)
-#define QBT_LOG_WARN(...)
-#define QBT_LOG_ERROR(...)
-#define QBT_LOG_FATAL(...)
+#if defined(QBT_DEBUG_BUILD) || defined(QBT_RELEASE_BUILD)
+	#ifdef QBT_WINDOWS_PLATFORM // Windows platform x32/x64/x86
+		#define QBT_LOG_INFO(...) \
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Info);\
+		qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		
+		#define QBT_LOG_WARN(...) \
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Warning);\
+		qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		
+		#define QBT_LOG_ERROR(...) \
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Error);\
+		qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		
+		#define QBT_LOG_FATAL(...) \
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Fatal);\
+		qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		
+	#else		
+	#endif
+#else
+	#define QBT_LOG_INFO(...)
+	#define QBT_LOG_WARN(...)
+	#define QBT_LOG_ERROR(...)
+	#define QBT_LOG_FATAL(...)
 
 #endif
