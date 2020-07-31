@@ -1,3 +1,5 @@
+![QubitLogo](/assets/github/QubitLogo.png)
+
 # Qubit
 Qubit is test game engine that im making so i can learn how to make game engines in the future.
 Qubit is in no way a good functioning working piece of code, it is TRASH!
