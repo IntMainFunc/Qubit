@@ -1,4 +1,4 @@
-![QubitLogo](/assets/github/QubitLogo.png)
+![QubitLogo2](/assets/github/QubitLogo2.png)
 
 # The Qubit game engine
 Qubit is test game engine that im making so i can learn how to make game engines in the future.
