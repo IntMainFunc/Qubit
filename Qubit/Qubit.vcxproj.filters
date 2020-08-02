@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\QbtPch.h" />
     <ClInclude Include="src\Qubit.h" />
     <ClInclude Include="src\qubit\core\App.h">
       <Filter>qubit\core</Filter>
@@ -16,11 +17,12 @@
     <ClInclude Include="src\qubit\core\Logger.h">
       <Filter>qubit\core</Filter>
     </ClInclude>
-    <ClInclude Include="src\qubit\core\QubitCore.h">
+    <ClInclude Include="src\qubit\core\QbtCore.h">
       <Filter>qubit\core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\QbtPch.cpp" />
     <ClCompile Include="src\qubit\core\App.cpp">
       <Filter>qubit\core</Filter>
     </ClCompile>

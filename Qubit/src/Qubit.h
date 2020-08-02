@@ -7,7 +7,7 @@
 //-------------------------------------
 
 // Qubit - core.
-#include "qubit\core\QubitCore.h"
+#include "qubit\core\QbtCore.h"
 #include "qubit\core\Logger.h"
 #include "qubit\core\App.h"
 

@@ -1,13 +1,13 @@
 #pragma once
 
-#include "QubitCore.h"
-#include <iostream>
+#include "QbtPch.h"
+#include "QbtCore.h"
 
-#ifdef QBT_WINDOWS_PLATFORM // Windows platform x32/x64/x86
-#include <Windows.h>
-extern HANDLE loggingConsole;
+#ifdef QBT_WINDOWS_PLATFORM
+	extern HANDLE loggingConsole;
 
-#endif
+#endif // QBT_WINDOWS_PLATFORM
+
 
 namespace qbt {
 

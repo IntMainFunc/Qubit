@@ -24,9 +24,17 @@ workspace "Qubit"
 		targetdir ("bin/" .. outputdir .. "%{prj.name}")
 		objdir ("bin-int/" .. outputdir .. "%{prj.name}")
 
+		pchheader "QbtPch.h"
+		pchsource "%{prj.name}/src/QbtPch.cpp"
+
 		files {
 			"%{prj.name}/src/**.cpp",
 			"%{prj.name}/src/**.h"
+		}
+
+		includedirs {
+			"{prj.name}/vendor",
+			"%{prj.name}/src"
 		}
 
 		filter "system:windows"

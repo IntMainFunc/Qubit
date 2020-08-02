@@ -1,4 +1,4 @@
-#include "Qubit.h"
+#include <Qubit.h>
 
 class Sandbox : public qbt::App
 {

@@ -6,6 +6,7 @@
 	and defines a macro for use
 	in source file in the Qubit API.
 */
+
 // Start of platform identification
 //----------------------------------
 #ifdef _WIN32									// _WIN32 - Windows x32/x64/x86

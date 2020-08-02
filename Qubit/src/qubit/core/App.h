@@ -1,6 +1,7 @@
 #pragma once
 
-#include "QubitCore.h"
+#include "QbtPch.h"
+#include "QbtCore.h"
 
 namespace qbt {
 	
