@@ -33,8 +33,12 @@ workspace "Qubit"
 		}
 
 		includedirs {
-			"{prj.name}/vendor",
-			"%{prj.name}/src"
+			"%{prj.name}/src",
+			"vendor/glfw/include"
+		}
+
+		links {
+			"vendor/glfw/glfw_x64.lib"
 		}
 
 		filter "system:windows"

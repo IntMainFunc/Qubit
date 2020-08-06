@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="platspec">
+      <UniqueIdentifier>{C186CA3C-AD53-2548-D66C-13F0C2985AD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platspec\windows">
+      <UniqueIdentifier>{1BFA1681-07F3-35D3-3025-1B581C7D15DF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="qubit">
       <UniqueIdentifier>{4AA83D10-B6BC-65C1-7F3E-0921EB1162F2}</UniqueIdentifier>
     </Filter>
@@ -20,6 +26,11 @@
     <ClInclude Include="src\qubit\core\QbtCore.h">
       <Filter>qubit\core</Filter>
     </ClInclude>
+    <ClInclude Include="src\qubit\core\QbtWindow.h" />
+    <ClInclude Include="src\qubit\events\CoreEvent.h" />
+    <ClInclude Include="src\qubit\events\KeyEvent.h" />
+    <ClInclude Include="src\qubit\events\MouseEvent.h" />
+    <ClInclude Include="src\qubit\events\WindowEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\QbtPch.cpp" />

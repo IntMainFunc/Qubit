@@ -7,9 +7,10 @@
 //-------------------------------------
 
 // Qubit - core.
-#include "qubit\core\QbtCore.h"
-#include "qubit\core\Logger.h"
-#include "qubit\core\App.h"
+#include "qubit/core/QbtCore.h"
+#include "qubit/core/Logger.h"
+#include "qubit/core/App.h"
+#include "qubit/events/KeyEvent.h"
 
 // End of includes for the Qubit.lib library.
 //--------------------------------------------

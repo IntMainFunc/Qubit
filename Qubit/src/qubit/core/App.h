@@ -3,7 +3,7 @@
 #include "QbtPch.h"
 #include "QbtCore.h"
 
-namespace qbt {
+namespace Qbt {
 	
 	class App
 	{

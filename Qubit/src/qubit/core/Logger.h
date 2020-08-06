@@ -9,7 +9,7 @@
 #endif // QBT_WINDOWS_PLATFORM
 
 
-namespace qbt {
+namespace Qbt {
 
 	class Logger
 	{
@@ -64,26 +64,26 @@ namespace qbt {
 #if defined(QBT_DEBUG_BUILD) || defined(QBT_RELEASE_BUILD)
 	#ifdef QBT_WINDOWS_PLATFORM // Windows platform x32/x64/x86
 		#define QBT_LOG_INFO(...) \
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Info);\
-		qbt::Logger::LogMassage(__VA_ARGS__);\
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Info);\
+		Qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Clear)
 		
 		#define QBT_LOG_WARN(...) \
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Warning);\
-		qbt::Logger::LogMassage(__VA_ARGS__);\
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Warning);\
+		Qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Clear)
 		
 		#define QBT_LOG_ERROR(...) \
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Error);\
-		qbt::Logger::LogMassage(__VA_ARGS__);\
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Error);\
+		Qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Clear)
 		
 		#define QBT_LOG_FATAL(...) \
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Fatal);\
-		qbt::Logger::LogMassage(__VA_ARGS__);\
-		SetConsoleTextAttribute(loggingConsole, qbt::Logger::Clear)
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Fatal);\
+		Qbt::Logger::LogMassage(__VA_ARGS__);\
+		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Clear)
 		
-	#else		
+	#else
 	#endif
 #else
 	#define QBT_LOG_INFO(...)

@@ -1,10 +1,12 @@
 #pragma once
 
-// The Qubit precompiled header
-//------------------------------
+// The Qubit precompiled header.
+//-------------------------------
 
 //Core.
-#include "qubit\core\QbtCore.h"
+#include "qubit/core/QbtCore.h"
+
+//Librarys.
 
 //Basic.
 #include <iostream>

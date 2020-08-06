@@ -1,6 +1,6 @@
 #include <Qubit.h>
 
-class Sandbox : public qbt::App
+class Sandbox : public Qbt::App
 {
 public:
 	Sandbox()

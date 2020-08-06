@@ -2,7 +2,7 @@
 #include "App.h"
 #include "QbtCore.h"
 
-namespace qbt {
+namespace Qbt {
 
 	App::App()
 	{

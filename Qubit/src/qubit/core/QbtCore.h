@@ -35,6 +35,6 @@
 #else											// No macro - Unidentified platform.
 	#error Unknown platform not supported.
 
-#endif 
+#endif
 // End of platform identification
 //--------------------------------
