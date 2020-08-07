@@ -33,7 +33,7 @@ namespace Qbt {
 		if (!s_IsGlfwInit)
 		{
 			int glfwInitSucc = glfwInit();
-			QBT_ASSERT(glfwInitSucc, "Glfw didn't get initialized!");
+			QBT_ASSERT(!glfwInitSucc, "Glfw didn't get initialized!");
 
 			s_IsGlfwInit = true;
 		}
@@ -42,7 +42,6 @@ namespace Qbt {
 		glfwMakeContextCurrent(m_WindowID);
 		glfwSetWindowUserPointer(m_WindowID, &m_Data);
 		SetVSync(true);
-
 	}
 
 	void GlWindow::Shutdown()

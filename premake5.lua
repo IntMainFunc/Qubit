@@ -14,6 +14,8 @@ workspace "Qubit"
 
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+	include "vendor/glfw"
+
 -- Project: Qubit.lib
 -- ------------------
 	project "Qubit"
@@ -34,11 +36,11 @@ workspace "Qubit"
 
 		includedirs {
 			"%{prj.name}/src",
-			"vendor/glfw/include"
+			"vendor/glfw/include/GLFW"
 		}
-
+		
 		links {
-			"vendor/glfw/glfw_x64.lib"
+			"GLFW"
 		}
 
 		filter "system:windows"
@@ -74,11 +76,13 @@ workspace "Qubit"
 		}
 
 		includedirs {
-			"Qubit/src"
+			"Qubit/src",
+			"vendor/glfw/include/GLFW"
 		}
 
 		links {
-			"Qubit"
+			"Qubit",
+			"GLFW"
 		}
 
 		filter "system:windows"
