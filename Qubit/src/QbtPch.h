@@ -7,6 +7,7 @@
 #include "qubit/core/QbtCore.h"
 
 //Librarys.
+#include <glfw3.h>
 
 //Basic.
 #include <iostream>

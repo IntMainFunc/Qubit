@@ -88,7 +88,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -112,7 +112,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
@@ -136,12 +136,13 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\vendor\glfw\glfw_x64.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\QbtPch.h" />
     <ClInclude Include="src\Qubit.h" />
+    <ClInclude Include="src\platspec\opengl\GlWindow.h" />
     <ClInclude Include="src\qubit\core\App.h" />
     <ClInclude Include="src\qubit\core\Logger.h" />
     <ClInclude Include="src\qubit\core\QbtCore.h" />
@@ -155,6 +156,7 @@
     <ClCompile Include="src\QbtPch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\platspec\opengl\GlWindow.cpp" />
     <ClCompile Include="src\qubit\core\App.cpp" />
     <ClCompile Include="src\qubit\core\Logger.cpp" />
   </ItemGroup>

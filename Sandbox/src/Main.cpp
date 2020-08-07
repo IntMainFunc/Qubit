@@ -15,9 +15,9 @@ public:
 
 	void Run()
 	{
-		while (true)
+		while (m_IsRunning)
 		{
-			break;
+			m_Window->OnUpdate();
 		}
 	}
 };

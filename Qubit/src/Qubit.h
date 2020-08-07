@@ -9,6 +9,7 @@
 // Qubit - core.
 #include "qubit/core/QbtCore.h"
 #include "qubit/core/Logger.h"
+#include "platspec/opengl/GlWindow.h"
 #include "qubit/core/App.h"
 #include "qubit/events/KeyEvent.h"
 

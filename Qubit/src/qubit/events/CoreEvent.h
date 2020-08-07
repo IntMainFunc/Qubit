@@ -22,6 +22,8 @@ namespace Qbt {
 		bool m_Handled = false;
 
 	public:
+		virtual ~Event() { }
+
 		virtual EventType GetType() const = 0;
 		virtual std::string GetDebug() const = 0;
 
@@ -32,12 +34,14 @@ namespace Qbt {
 	private:
 		Event& m_Event;
 
+		template<typename T>
+		using EventFunc = std::function<bool(T&)>;
 	public:
 		EventDispatcher(Event& event)
 			:m_Event(event) { }
 
 		template<typename T>
-		bool Dispatch(std::function<bool(T&)> func)
+		bool Dispatch(EventFunc<T> func)
 		{
 			if (m_Event.GetType() == T::GetStatType())
 			{

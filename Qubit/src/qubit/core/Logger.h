@@ -54,7 +54,7 @@ namespace Qbt {
 		static void LogMassage(T Data, Ts ... Data_s)
 		{
 			std::cout << Data;
-			LogLoop(Data_s);
+			LogMassage(Data_s ...);
 		}
 
 	};
@@ -83,6 +83,9 @@ namespace Qbt {
 		Qbt::Logger::LogMassage(__VA_ARGS__);\
 		SetConsoleTextAttribute(loggingConsole, Qbt::Logger::Clear)
 		
+		#define QBT_ASSERT(x, ...) \
+		if (x){ QBT_LOG_ERROR(__VA_ARGS__); } x
+
 	#else
 	#endif
 #else
@@ -90,5 +93,6 @@ namespace Qbt {
 	#define QBT_LOG_WARN(...)
 	#define QBT_LOG_ERROR(...)
 	#define QBT_LOG_FATAL(...)
+	#define QBT_ASSERT(x, ...)
 
 #endif

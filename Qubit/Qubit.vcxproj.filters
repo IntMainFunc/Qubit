@@ -4,8 +4,8 @@
     <Filter Include="platspec">
       <UniqueIdentifier>{C186CA3C-AD53-2548-D66C-13F0C2985AD6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="platspec\windows">
-      <UniqueIdentifier>{1BFA1681-07F3-35D3-3025-1B581C7D15DF}</UniqueIdentifier>
+    <Filter Include="platspec\opengl">
+      <UniqueIdentifier>{35059B75-A190-083A-AAA1-8B2E16AC643A}</UniqueIdentifier>
     </Filter>
     <Filter Include="qubit">
       <UniqueIdentifier>{4AA83D10-B6BC-65C1-7F3E-0921EB1162F2}</UniqueIdentifier>
@@ -13,10 +13,16 @@
     <Filter Include="qubit\core">
       <UniqueIdentifier>{02172F51-EECE-709E-57D6-49FA43AD0B8F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="qubit\events">
+      <UniqueIdentifier>{0EF1725E-FA53-0203-A3D9-3AB98F1BCE85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\QbtPch.h" />
     <ClInclude Include="src\Qubit.h" />
+    <ClInclude Include="src\platspec\opengl\GlWindow.h">
+      <Filter>platspec\opengl</Filter>
+    </ClInclude>
     <ClInclude Include="src\qubit\core\App.h">
       <Filter>qubit\core</Filter>
     </ClInclude>
@@ -26,14 +32,27 @@
     <ClInclude Include="src\qubit\core\QbtCore.h">
       <Filter>qubit\core</Filter>
     </ClInclude>
-    <ClInclude Include="src\qubit\core\QbtWindow.h" />
-    <ClInclude Include="src\qubit\events\CoreEvent.h" />
-    <ClInclude Include="src\qubit\events\KeyEvent.h" />
-    <ClInclude Include="src\qubit\events\MouseEvent.h" />
-    <ClInclude Include="src\qubit\events\WindowEvent.h" />
+    <ClInclude Include="src\qubit\core\QbtWindow.h">
+      <Filter>qubit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qubit\events\CoreEvent.h">
+      <Filter>qubit\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qubit\events\KeyEvent.h">
+      <Filter>qubit\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qubit\events\MouseEvent.h">
+      <Filter>qubit\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\qubit\events\WindowEvent.h">
+      <Filter>qubit\events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\QbtPch.cpp" />
+    <ClCompile Include="src\platspec\opengl\GlWindow.cpp">
+      <Filter>platspec\opengl</Filter>
+    </ClCompile>
     <ClCompile Include="src\qubit\core\App.cpp">
       <Filter>qubit\core</Filter>
     </ClCompile>
